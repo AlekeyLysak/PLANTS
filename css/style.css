@@ -92,6 +92,14 @@ ul li a:hover{
 	color:#2c71b8;
 }
 
+.menu > li:hover .fa-angle-down{
+	color: #ffffff;
+}
+
+.menu li a:hover .fa-angle-down{
+	transform: rotate(270deg);
+}
+
 .menu li:hover a  {
 	background: #2c71b8;
 	color: white;
