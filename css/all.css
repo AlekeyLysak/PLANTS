@@ -7910,7 +7910,11 @@ readers do not read off random characters that represent icons */
 
 .fas,
 .fa-solid {
-  font-weight: 900;}
+  font-weight: 900;
+  font-size:12px;
+  color: rgb(44, 113, 182);
+  margin-left:5px;
+}
 @font-face {
   font-family: 'Font Awesome 5 Brands';
   font-display: block;
