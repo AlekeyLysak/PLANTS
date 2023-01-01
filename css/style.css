@@ -111,6 +111,75 @@
 	padding-left: 26px;
   }
 
+.nav{
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.menu li img {
+    padding-left: 5px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+
+.menu a:hover {
+    color: #00730C;
+ }
+  
+ul {
+    display: flex;
+    list-style: none;
+}
+  
+  .btn-call {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*---------BUTTON---------*/
+.call-us {
+    position: relative;
+    background-color: #00730C;
+    border: none;
+    width: 170px;
+    padding: 9px 0px;
+    border-radius: 6px;
+  }
+  .call-us a {
+    display: flex;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: 32px;
+  }
+  
+  .call {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+
+
+
 @media(min-width: 320px) and (max-width: 768px){
 	.header{
 		width: 100%;
@@ -150,3 +219,67 @@
 		width: 40%;
 	  }
 }
+
+@media (max-width: 767px){
+    .lang{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .lang a{
+        color: white;
+        text-decoration: none;
+        font-weight: 100;
+    }
+}
+
+@media (max-width: 767px) {
+    header .navbar-mob {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo img {
+		width: 88%;
+	  }
+}
+
+@media (max-width: 767px){
+   header .navbar-mob .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .nav a{
+        padding-right: 40px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 767px){
+    .header .header-nav{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .header .navbar-mob{
+        display: none;
+    }
+    .top-navbar{
+        width: 100%;
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
