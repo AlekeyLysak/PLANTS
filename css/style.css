@@ -48,6 +48,7 @@ body {
 .top-navbar {
 	display: flex;
 	align-items: center;
+    justify-content: center;
 	background-color: #0C4B35;
 	height: 60px;
 }
@@ -249,8 +250,8 @@ ul {
         display: none;
     }
     .top-navbar{
-        width: 100%;
-        display: flex;
+        width: 100% !important;
+       
     }
 }
 
@@ -264,7 +265,6 @@ ul {
         margin-top: 7px;
     }
 }
-
 
 
 
