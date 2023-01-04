@@ -388,19 +388,23 @@ ul {
      .menu li img{
         width: 14px;
     }
-    .btn-call  {
-       width: 90px;
-    }
-   .call-us a{
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-        line-height: 20px;
-        margin-left: 12px;
-   }
-   .call-us img{
-        width: 20px;
-   }
+   .call-us{
+    width: 80px;
+    border-radius: 10px;
+  }
+  .call-us a{
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      line-height: 20px;
+      margin-left: 6px;
+  }
+  .call{
+    margin-left: 5px;
+  }
+ .call-us img{
+      width: 18px;
+ }
    .header-mob{
         display:none ;
     }
