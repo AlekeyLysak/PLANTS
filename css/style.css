@@ -1,4 +1,5 @@
- *{
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -45,7 +46,7 @@ body {
 	max-width: 100%;
 }
 
-
+/*---------HEADER---------*/
 
 .top-navbar {
 	display: flex;
@@ -71,15 +72,6 @@ body {
     justify-content: space-between;
 }
 
-.email, .contacts, .location {
-	display: flex;
-	align-items: center;
-    font-size: 14px;
-	margin-left: 30px;
-    color: white;
-    line-height: 13px;
-  }
-
 .text-item{
 	margin-left: 12px;
 	font-weight: 200;
@@ -101,23 +93,8 @@ body {
 	margin-left: 5px;
 }
 
-.logo {
-	position: relative;
-	margin-top: 15px;
-  }
-  .logo img {
-	padding-left: 26px;
-  }
-
 .nav{
     display: none;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 40px;
 }
 
 .menu li img {
@@ -149,36 +126,22 @@ ul {
     justify-content: flex-end;
 }
 
-/*---------BUTTON---------*/
-.call-us {
-    position: relative;
-    background-color: #00730C;
-    border: none;
-    width: 170px;
-    padding: 9px 0px;
-    border-radius: 6px;
-  }
-  .call-us a {
-    display: flex;
-    align-items: center;
-    font-family: "Nunito", sans-serif;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 20px;
-    margin-left: 32px;
-  }
-  
-.call {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
+.girl-image img {
+    background-image: url(../img/girl.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+   bottom: 0;
+   right: 0;
+   opacity: 0.2;
 }
-
 
 .container-mob{
     padding: 0 15px;
 }
+
+
 
 @media (max-width: 767px){
     .top-navbar {
@@ -193,30 +156,30 @@ ul {
         width: 760px;
     }
     .row{
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  }
     .text-item{
         display: none;
     }
     .email, .contacts, .location{
-		margin-left: 5px;
+        margin-left: 5px;
         padding-right: 15px;
-	}
+  }
     .email img, .contacts img, .location img{
-		width: 20px;
-	}
-    .logo {
+        width: 20px;
+  }
+  .logo {
         position: relative;
-    }
+        margin-top: 15px;
+}
     .logo img {
         padding-left: 2px;
     }
-    
 }
-
-@media (max-width: 767px){
+  
+  @media (max-width: 767px){
     .lang{
         display: flex;
         justify-content: flex-end;
@@ -226,20 +189,20 @@ ul {
         text-decoration: none;
         font-weight: 100;
     }
-}
-
-@media (max-width: 767px) {
+  }
+  
+  @media (max-width: 767px) {
     header .navbar-mob {
         display: flex;
         justify-content: space-between;
         height: 70px;
     }
     .logo img {
-		width: 78%;
-	  }
-}
-
-@media (max-width: 767px){
+        width: 78%;
+    }
+  }
+  
+  @media (max-width: 767px){
    header .navbar-mob .nav {
         display: flex;
         justify-content: space-between;
@@ -249,31 +212,42 @@ ul {
         padding-right: 40px;
         margin-top: 8px;
     }
-}
-
-@media (max-width: 767px){
+  }
+  
+  @media (max-width: 767px){
     .header .header-nav{
         display: none;
     }
+  }
+  @media (min-width: 320px){
+    .services__title {
+        font-size: 35px;
+        line-height: 61px;
+        margin-bottom: 30px;
+    }
 }
-
+ 
 @media (min-width: 768px){
     .header .navbar-mob{
         display: none;
     }
-}
+  }
 
+  
 @media (max-width: 767px){
     header .header-girl {
         display: flex;
         width: 100%;
         height: 240px;
-        background-image: url(../img/girl.jpg);
+        background-image: url(../img/girl.png);
         background-size: cover;
     }
+    .header-mob{
+        margin-bottom: 50px;
+    }
 }
-
-@media (max-width: 767px) {
+  
+  @media (max-width: 767px) {
     header .header-info {
         background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
     }
@@ -311,7 +285,6 @@ ul {
         margin-top: 40px;
     }
     .get{
-       
         padding: 12px 105px;
         background-color: #00730C;
         color: white;
@@ -322,7 +295,7 @@ ul {
         font-size: 16px;
         font-weight: 600;
     }
-    .it-works{
+    .it-works a{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -348,80 +321,840 @@ ul {
         left: -15px;
         top:-30px
     }
-
-}
-
-@media (max-width: 330px) {
+    .girl-image{
+        display: none;
+    }
+    .header-desktop{
+        display: none;
+    }
+  }
+  
+  @media (max-width: 330px) {
     .get{
         display: flex;
         align-items: center;
         font-size: 14px;
     }
 }
+  @media (min-width: 768px){
+    .header-desktop {
+        display: flex;
+        justify-content: center;
+    }
+}
+  
+
+
+/*------------------WIDTH 768--------------------*/
+
 
 @media (min-width: 768px){
     .text-item{
         font-size: 10px;
     }
     .email img, .contacts img, .location img{
-		width: 20px;
+        width: 20px;
     }
     .contacts, .location{
         margin-left: 10px;
     }
-	.lang a{
+    .email, .contacts, .location {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 20px;
+        color: white;
+        line-height: 13px;
+      }
+    .lang a{
         font-size: 12px;
     }
    .logo img {
-		width: 52%;
-	}
-    .menu{
+        width: 45%;
+        padding-left: 26px;
+    }
+    .logo {
+        position: relative;
+        margin-top: 15px;
+    }
+    .menu {
         display: flex;
-        margin-left:0;
+        align-items: center;
+        justify-content: space-between;
     }
-    .col-4{
-        max-width:28%;
-    }
-     .menu li a{
-        font-size: 12px;
+    .menu li a{
+        font-size: 13px;
      }
      .menu li img{
         width: 14px;
     }
-   .call-us{
-    width: 80px;
-    border-radius: 10px;
-  }
-  .call-us a{
-      display: flex;
-      align-items: center;
-      font-size: 12px;
-      line-height: 20px;
-      margin-left: 6px;
-  }
-  .call{
-    margin-left: 5px;
-  }
- .call-us img{
-      width: 18px;
- }
+    .call-us{
+        position: relative;
+        background-color: #00730C;
+        width: 100px;
+        border-radius: 10px;
+        border: none;
+        height: 40px;
+    }
+    .call-us a{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: white;
+        line-height: 20px;
+        margin-left: 11px;
+        text-decoration: none;
+    }
+    .call{
+      margin-left: 5px;
+    }
+   .call-us img{
+        width: 23px;
+   }
    .header-mob{
         display:none ;
     }
+
 }
 
+
+/*------------------WIDTH 768--------------------*/
+
+
+
+@media (min-width: 768px){
+    .header-desktop {
+        position: relative;
+        background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
+        height: 719px;
+    }
+}
+
+@media (min-width: 768px){
+    .container-desktop{
+        padding: 133px 45px 100px;
+        width: 190px;
+    }
+    .plant{
+        position: absolute;
+       bottom: 0;
+    } 
+    .plant img{
+        width: 80%;
+       
+    }
+    .sup-title img{
+        padding-right: 5px;
+    }
+    .title{
+        padding-top: 10px;
+        font-weight: 900;
+        font-size: 58px;
+        line-height: 79px;
+    }
+    span {
+        color: #00730C;
+    }
+    .sub-title p{
+        font-weight: 400;
+        padding-top: 15px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #2c2c2c;
+        width: 554px;
+    }
+    .btn-header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .get{
+        font-family: "Nunito", sans-serif;
+        padding: 13px, 35px, 13px, 35px;
+        background-color: #00730C;
+        color: white;
+        border: none;
+        height: 50px;
+        width: 175px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .it-works a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        color: #676767;
+        padding-left: 30px;
+    }
+    .it-works img{
+        padding-left: 15px;
+        color: #676767;
+        width: 35px;
+    }
+    
+    .sup-title {
+        display: flex;
+        align-items: center;
+      justify-content: flex-start;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .info__info{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+
+        justify-content: flex-start;
+    }
+    .item-info {
+        background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);
+        border-radius: 35px;
+        padding: 17px 7px;
+        margin-left: 17px;
+        width: 50px;
+        height: 50px;
+    }
+   .customrs{
+        font-size: 15px;
+        font-weight: 800;
+        color: #212529;
+    }
+   .item-name{
+        margin-left: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        width: 89px;
+   }
+}
+
+
+
+/*------------------WIDTH 1024--------------------*/
+
+
 @media (min-width: 1024px){
+    .email, .contacts, .location {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        margin-left: 20px;
+        color: white;
+        line-height: 13px;
+    }
     .text-item{
         font-size: 14px;
     }
     .email img, .contacts img, .location img{
-		width: 25px;
+      width: 25px;
     }
     .contacts, .location{
         margin-left: 12px;
     }
-	.lang a{
+    .lang a{
         font-size: 14px;
     }
+    .menu li a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-family: "Nunito", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        text-transform: capitalize;
+    }
+    .menu li img {
+        width: 16px;
+    }
+    .logo {
+        position: relative;
+        margin-top: 15px;
+    }
     
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .call-us {
+        position: relative;
+        background-color: #00730C;
+        border: none;
+        width: 140px;
+        height: 50px;
+        padding: 9px 0px;
+        border-radius: 6px;
+      }
+      .call-us a {
+        display: flex;
+        align-items: center;
+        font-family: "Nunito", sans-serif;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 20px;
+        margin-left: 21px;
+      }
+      .call {
+        display: flex;
+        align-items: center;
+        margin-left: 8px;
+    }
+    .call-us img{
+        width: 27px;
+    }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container-desktop {
+        padding: 50px 45px 100px;
+        width: 190px;
+    }
+    .header-desktop {
+        position: relative;
+        height: 650px;
+    }
+}
+
+
+/*------------------WIDTH 1440--------------------*/
+
+
+  @media (min-width: 1440px){
+    .email, .contacts, .location {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin-left: 25px;
+        color: white;
+        line-height: 13px;
+      }
+    .logo img {
+        padding-left: 26px;
+        width: 38%;
+    }
+    .call-us {
+        position: relative;
+        background-color: #00730C;
+        border: none;
+        width: 170px;
+        height: 50px;
+        padding: 9px 0px;
+        border-radius: 6px;
+      }
+      .call-us a {
+        display: flex;
+        align-items: center;
+        font-family: "Nunito", sans-serif;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 20px;
+        margin-left: 32px;
+      }
+      .call {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+  }
+
+/*------------------WIDTH 1920--------------------*/
+
+  @media (min-width: 1920px){
+    .email, .contacts, .location {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin-left: 30px;
+        color: white;
+        line-height: 13px;
+      }
+    .logo img {
+        padding-left: 26px;
+        width: 35%;
+        margin-bottom: 10px;
+    }
+    .call-us {
+        position: relative;
+        background-color: #00730C;
+        border: none;
+        width: 170px;
+        height: 50px;
+        padding: 9px 0px;
+        border-radius: 6px;
+      }
+      .call-us a {
+        display: flex;
+        align-items: center;
+        font-family: "Nunito", sans-serif;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 20px;
+        margin-left: 32px;
+      }
+      
+    .call {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+  }
+
+/*------------------WIDTH 1920--------------------*/
+
+/*------------------SERVICES--------------------*/
+
+.services{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
+}
+
+/* 
+@media (min-width: 320px) and (max-width: 767px){
+    .services__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 61px;
+        margin-bottom: 3px;
+    }
+    .services{
+        padding-top: 50px;
+    }
+    .services__text{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 30px;
+        color: #676767;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .services__items{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .services__item{
+        position: relative;
+        width: 300px;
+        height: 336px;
+        border-radius: 10px;
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        margin-top: 30px;
+        text-decoration: none;
+    }
+} */
+
+
+
+
+@media (min-width: 320px) and (max-width: 767px){
+    .services{
+        display: none;
+    }
+    .services__title,.gardening__title{
+       font-weight: 700;
+        text-align: center;
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+    .services__text{
+       font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: #676767;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .services__items{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .services__item{
+        position: relative;
+        width: 345px;
+        height: 116px;
+        border-radius: 10px;
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        margin-top: 20px;
+        text-decoration: none;
+    }
+    .services__item img{
+        position: relative;
+        top:0;
+        left: 0;
+    }
+    .services__item:hover { 
+        background-color: #00730C;
+        transition: 0.5s ease;
+        color: white;
+    }
+    
+    .services__image img {
+        position: absolute;
+        left: 6%;
+        top: 26%;
+    }
+    .services-text{
+        position: absolute;
+        left: 24%;
+        top: 15%;
+        font-weight: 700;
+         font-size: 14px;
+         line-height: 22px;
+         text-align: center;
+         color: #212529;
+     } 
+     .paragraph {
+        position: absolute;
+        left: 21%;
+        top: 45%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 22px;
+        text-align: center;
+        color: #676767;
+        width: 255px;
+    }
+   .gardening-mob{
+        margin-top: 50px;
+        margin-bottom: 122px;
+    }
+    .image-block{
+        position: relative;
+        display: flex;
+       justify-content: flex-start;
+        height: 462px;
+        margin-bottom: 30px;
+    }
+    .bg-green{
+         width: 188px;
+        height: 293px;
+        background-color:#00730C;
+    }
+    .men-plant img {
+       position:absolute;
+        height: 358px;
+        max-width: 291px;
+        left: 3.48%;
+        top: 2.6%;
+    }
+    .house-plant img{
+        position: absolute;
+        left: 30.86%;
+        top: 65%;
+    }
+    .gardening__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #676767;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+    .cards-item{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 162px;
+        height: 94px;
+        background-color: white;
+        padding: 15px;
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    .card-text{
+        position: absolute;
+        margin-top: 50px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .btn-button{
+        position: relative;
+         display: flex;
+        justify-content: center;
+    }
+    .garden__button{
+        font-family: "Nunito", sans-serif;
+        background-color: #00730C;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        height: 40px;
+        width: 167px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+}
+
+@media (min-width: 425px)and (max-width: 767px){
+    .services-text{
+        position: absolute;
+        left: 24%;
+        top: 15%;
+        font-weight: 700;
+         font-size: 20px;
+         line-height: 22px;
+         text-align: center;
+         color: #212529;
+     } 
+    .paragraph{
+        position: absolute;
+        left: 23%;
+        top: 45%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        color: #676767;
+        width: 281px;
+    }
+    .services__item:hover { 
+        background-color: #00730C;
+        transition: 0.5s ease;
+        color: white;
+    } 
+    .span-text{
+        margin-left: 10px;
+    }
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+    .cards-item{
+        width:190px;
+        height:100px;
+    }
+}
+
+@media (min-width: 320px)and (max-width: 374px){
+    .services-text{
+        position: absolute;
+        left: 26%;
+        top: 15%;
+        font-weight: 700;
+         font-size: 17px;
+         line-height: 22px;
+         text-align: center;
+         color: #212529;
+     } 
+    .paragraph{
+        position: absolute;
+        left: 24%;
+        top: 45%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 22px;
+        text-align: center;
+        color: #676767;
+        width: 215px;
+    }
+    .bg-green{
+        width: 188px;
+        height: 293px;
+        background-color:#00730C;
+    }
+    .span-text{
+        margin-left: 10px;
+    }
+    .men-plant img{
+       width: 100%;
+       object-fit: cover;
+    }
+    .house-plant img {
+        position: absolute;
+        left: 10.86%;
+        top: 70%;
+    }
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    .cards-item {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 270px;
+        height: 110px;
+        background-color: white;
+        padding: 15px;
+        box-shadow: 2px 11px 30px rgb(51 51 51 / 8%);
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+   
+}
+
+@media (min-width: 425px){
+    .services__items{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .services__item{
+        position: relative;
+        width: 395px;
+        height: 136px;
+    }
+    .services__item:hover { 
+        background-color: #00730C;
+        transition: 0.5s ease;
+        color: white;
+    }
+    .services__item:hover > .services-text{
+        color: white;
+    }
+    
+    .services__item:hover > .paragraph{
+        color: white;
+    }
+    
+    .services__item:hover .services__image {
+        display: block;
+      }
+    .services__item:hover .services__image-img {
+        display: none;
+      }
+    .services__item:hover .services__image img:hover {
+        background-image: url(/img/Grass\Cutting.png);
+    }
+    .span-text{
+        margin-left: 10px;
+    }
+}
+
+
+
+@media (min-width: 768px){
+    .services-mob{
+        display: none;
+    }
+    .gardening-mob{
+        display: none;
+    }
+    .services__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 61px;
+        margin-bottom: 30px;
+    }
+    .services__text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #676767;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .services__items{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .services__item{
+        position: relative;
+        width: 330px;
+        height: 366px;
+        border-radius: 10px;
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        margin-top: 30px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .services__item img{
+        position: relative;
+        top:10px;
+        left: 77px;
+    }
+    .services__image img {
+        position: absolute;
+        top:16%;
+        left:40%;
+    }
+    .services-text{
+        font-weight: 700;
+         font-size: 24px;
+         line-height: 33px;
+         text-align: center;
+         color: #212529;
+     }
+     .paragraph{
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        margin-top: 15px;
+        color: #676767;
+        padding: 0 30px;
+    }
+    .services__item:hover { 
+        background-color: #00730C;
+        transition: 0.5s ease;
+        color: white;
+    } 
+    
+    .services__item:hover > .services-text{
+        color: white;
+    }
+    
+    .services__item:hover > .paragraph{
+        color: white;
+    }
+    
+    .services__item:hover .services__image {
+        display: block;
+      }
+    .services__item:hover .services__image-img {
+        display: none;
+      }
+    .services__item:hover .services__image img:hover {
+        background-image: url(/img/Grass\Cutting.png);
+    }
+}
+
