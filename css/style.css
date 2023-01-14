@@ -915,7 +915,20 @@ ul {
         font-size: 16px;
         line-height: 20px;
     }
-
+    .services__item:hover > .services-text{
+        color: white;
+    }
+    
+    .services__item:hover > .paragraph{
+        color: white;
+    }
+    
+    .services__item:hover .services__image {
+        display: block;
+      }
+    .services__item:hover .services__image-img {
+        display: none;
+      }
 }
 
 @media (min-width: 425px)and (max-width: 767px){
@@ -961,6 +974,20 @@ ul {
         width:190px;
         height:100px;
     }
+    .services__item:hover > .services-text{
+        color: white;
+    }
+    
+    .services__item:hover > .paragraph{
+        color: white;
+    }
+    
+    .services__item:hover .services__image {
+        display: block;
+      }
+    .services__item:hover .services__image-img {
+        display: none;
+      }
 }
 
 @media (min-width: 320px)and (max-width: 374px){
@@ -1022,7 +1049,20 @@ ul {
         border-radius: 5px;
         margin-top: 20px;
     }
-   
+   .services__item:hover > .services-text{
+        color: white;
+    }
+    
+    .services__item:hover > .paragraph{
+        color: white;
+    }
+    
+    .services__item:hover .services__image {
+        display: block;
+      }
+    .services__item:hover .services__image-img {
+        display: none;
+      }
 }
 
 @media (min-width: 425px){
@@ -1153,8 +1193,5 @@ ul {
     .services__item:hover .services__image-img {
         display: none;
       }
-    .services__item:hover .services__image img:hover {
-        background-image: url(/img/Grass\Cutting.png);
-    }
 }
 
